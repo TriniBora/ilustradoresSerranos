@@ -70,13 +70,31 @@
 } */
     /* NAVIGATION MENU - FOOTER*/
     
+    .menu {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    
     .menu ul,
     .social-media-copyright ul {
         list-style: none;
         padding: 0;
         margin: 0;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
     }
     
+    .menu i,
+    .menu li,
+    .social-media-copyright li {
+        flex: 1 0 auto;
+        /*quita los espacios entre cada elemento de la lista*/
+        text-align: center;
+    }
+    
+    .menu i,
     .menu li a,
     .social-media-copyright li a {
         display: block;
@@ -85,22 +103,14 @@
         padding: 0.6em 1em;
     }
     
+    .menu i:hover,
     .menu li a:hover {
         color: hsl(0, 0%, 50%);
     }
     
-    .menu-simple ul,
-    .social-media-copyright ul {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
-    }
-    
-    .menu-simple li,
-    .social-media-copyright li {
-        flex: 1 0 auto;
-        /*quita los espacios entre cada elemento de la lista*/
-        text-align: center;
+    #dropdown-menu,
+    .menu i {
+        visibility: hidden;
     }
     /* MAIN SECTION */
     
@@ -163,30 +173,22 @@
             height: auto;
         }
         /* NAVIGATION MENU*/
-        .menu ul,
-        .social-media-copyright ul {
-            list-style: none;
-            padding: 0;
-            margin: 0;
+        .menu {
+            flex-direction: column;
         }
-        .menu li a {
+        .menu ul {
+            display: none;
+        }
+        #dropdown-menu,
+        .menu i {
+            visibility: visible;
+        }
+        input:checked~ul {
             display: block;
-            text-decoration: none;
-            color: #fff;
-            padding: 0.6em 1em;
+            background-color: hsla(0, 0%, 20%, .5);
         }
-        .menu li a:hover {
-            color: hsl(0, 0%, 50%);
-        }
-        .menu-simple ul {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-between;
-        }
-        .menu-simple li {
-            flex: 1 0 auto;
-            /*quita los espacios entre cada elemento de la lista*/
-            text-align: center;
+        #dropdown-menu {
+            display: none;
         }
         /* MAIN SECTION */
         .main-section h1 {

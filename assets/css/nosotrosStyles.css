@@ -4,7 +4,7 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    font-size: 18px;
+    padding-top: 7em;
 }
 
 .card {
@@ -49,11 +49,12 @@ img {
     height: auto;
 }
 
-@media screen and (max-width: 52em) {
+
+/* @media screen and (max-width: 52em) {
     .center {
         max-width: 52em;
     }
     .card {
         width: 80%;
     }
-}
+} */

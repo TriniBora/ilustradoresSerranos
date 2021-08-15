@@ -1,17 +1,18 @@
 /* CARDS */
 
-.cards {
+#cards-section {
     display: flex;
     flex-wrap: wrap;
+    flex-direction: row;
     justify-content: space-around;
     padding-top: 7em;
 }
 
 .card {
-    background-color: hsl(0, 0%, 100%);
+    /* background-color: hsl(0, 0%, 100%); */
     margin-bottom: 0.2em;
     /*margen hacia abajo para separar cada tarjeta*/
-    width: 33%;
+    width: 40%;
 }
 
 .card a {
@@ -47,6 +48,7 @@ img {
     border: 0;
     width: 100%;
     height: auto;
+    opacity: .7578;
 }
 
 

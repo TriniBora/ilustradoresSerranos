@@ -1,3 +1,19 @@
+/* ----------------LOCAL FONTS---------------- */
+
+@font-face {
+    font-family: "Comfortaa";
+    font-style: normal;
+    font-weight: normal;
+    src: url(../fonts/Comfortaa-VariableFont_wght.ttf);
+}
+
+@font-face {
+    font-family: "Overpass-bold";
+    font-style: normal;
+    font-weight: bold;
+    src: url(../fonts/Overpass-Bold.ttf);
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -8,7 +24,7 @@
 
 html {
     font-size: 16px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: Comfortaa;
 }
 
 body {
@@ -133,8 +149,10 @@ body {
 
 .main-section h1 {
     padding-left: 1em;
-    font-size: 4em;
+    font-size: 5em;
     color: cyan;
+    font-family: Overpass-bold;
+    font-weight: 700;
 }
 
 

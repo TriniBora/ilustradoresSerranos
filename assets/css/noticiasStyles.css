@@ -1,18 +1,17 @@
 /* CARDS */
 
 #cards-section {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    justify-content: space-around;
-    padding-top: 7em;
+    padding: 7em 2em 0em;
+    display: grid;
+    grid-gap: 2em;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 }
 
 .card {
-    /* background-color: hsl(0, 0%, 100%); */
+    background-color: hsl(0, 0%, 100%, .75);
     margin-bottom: 0.2em;
     /*margen hacia abajo para separar cada tarjeta*/
-    width: 40%;
+    /* width: 40%; */
 }
 
 .card a {
@@ -48,7 +47,8 @@ img {
     border: 0;
     width: 100%;
     height: auto;
-    opacity: .7578;
+    opacity: .50;
+    /* z-index: 1; */
 }
 
 
